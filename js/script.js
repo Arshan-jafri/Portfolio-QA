@@ -1,7 +1,24 @@
 /******************************************************************************************************************************
 Waypoints
 *******************************************************************************************************************************/ 
+function toggleDetails(detailId) {
+    const details = document.getElementById(detailId);
+    
+    // Hide all other project details
+    const allDetails = document.querySelectorAll('.project-details');
+    allDetails.forEach(detail => {
+        if (detail.id !== detailId) {
+            detail.style.display = "none"; // Hide other details
+        }
+    });
 
+    // Toggle the clicked project's details
+    if (details.style.display === "block") {
+        details.style.display = "none";
+    } else {
+        details.style.display = "block";
+    }
+}
 $(document).ready(function() {
 
 	$('.wp1').waypoint(function() {

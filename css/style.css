@@ -24,6 +24,128 @@
 /* ==========================================================================
 	Global Styles
 ========================================================================== */
+.edu{font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #e40c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;}
+.education-container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.h11 {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 45px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 45px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #3498db;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-icon {
+    background-color: #2980b9;
+}
+
+.timeline-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.timeline-item:hover .timeline-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-content .institution {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.timeline-content .year {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.timeline-content .description {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item:before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-content {
+        transform: translateX(0);
+    }
+}
+
 a {
 	color: #E04343;
 	-webkit-transition:all 0.5s;
@@ -83,7 +205,24 @@ audio,canvas,video {
 audio:not([controls]) {
 	display:none;
 	height:0;
-}
+                      }
+¯<<<<<<< Tabnine <<<<<<<
+.services .item:hover .icon {//+
+    background: #E04343;//+
+    border: 1px solid #E04343;//+
+}//+
+.services .item [class*=fa] {//+
+    -webkit-transition:all .3s ease-out;//+
+    transition:all .3s ease-out;//+
+}//+
+.services .item:hover [class*=fa] {//+
+    -webkit-transform:scale(1.2);//+
+    transform:scale(1.2);//+
+    -webkit-transition:all .3s ease-out;//+
+    transition:all .3s ease-out;//+
+    color:#fff;//+
+}//+
+>>>>>>> Tabnine >>>>>>>// {"conversationId":"d47bb771-d3c8-4f37-b194-813f66e0699a","source":"instruct"}
 [hidden] {
 	display: none;
 }
