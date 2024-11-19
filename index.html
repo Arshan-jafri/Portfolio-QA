@@ -29,6 +29,53 @@
     <script src="assets/html5shiv/html5shiv.js"></script>
     <script src="assets/respond/respond.min.js"></script>
     <![endif]-->
+    <style>
+      #projects {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 20px;
+          background: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+          text-align: center;
+          color: #333;
+      }
+
+      .project-card {
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          margin: 10px 0;
+          padding: 15px;
+          cursor: pointer;
+          transition: background 0.3s, transform 0.3s;
+          background-color: #f8f9fa;
+          position: relative;
+          overflow: hidden;
+      }
+
+      .project-card:hover {
+          background: #f1f1f1;
+          transform: translateY(-5px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-card h3 {
+          color: #6a11cb;
+          font-weight: 600;
+      }
+
+      .project-details {
+          display: none;
+          padding: 10px;
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          margin-top: 10px;
+      }
+  </style>
 </head>
 
 <body id="top">
@@ -237,128 +284,105 @@
   <!-- ==========================
         ABOUT SECTION END
         =========================== -->
-
-
-
-
-  <!-- ==========================
-        PORTFOLIO SECTION
-    =========================== -->
-  <section class="swag text-center" id="portfolio">
-    <div class="container">
-      <!-- Headline -->
-      <div class="row">
-        <h1 class="arrow">
-          Recent <span>Porojects</span>
-        </h1>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="row row-offset-0">
-
-      <!-- PORTFOLIO ITEM 1 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-          <div class="img">
-            <a href="img/portfolio/portfolio-01-large.jpg" data-lightbox="roadtrip"
-              title="Project One - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-01-thumbnail.jpg"
-                alt="Portfolio Item"></a>
+<!-- ==========================
+        EDUCATION SECTION STARTS
+        =========================== -->
+        <div class="education-container, edu">
+          <h1>My Education Experience</h1>
+    
+          <div class="timeline">
+            <!-- Education 1 -->
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img src="https://img.icons8.com/ios/452/school.png" alt="School" />
+              </div>
+              <div class="timeline-content">
+                <h3>Bachelor of Computer Applications</h3>
+                <p class="institution">
+                  College of Innovative Management And Science
+                </p>
+                <p class="year">2021 - 2024</p>
+                <p class="description">
+                  Focused on software development, algorithms, and data structures.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Education 2 -->
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img src="https://img.icons8.com/ios/452/school.png" alt="School" />
+              </div>
+              <div class="timeline-content">
+                <h3>Intermidiate</h3>
+                <p class="institution">Seventh day adventist Sr. Sec. School</p>
+                <p class="year">2020 - 2021</p>
+                <p class="description">
+                    Physics,Chemistry,Mathematics etcs.
+                  </p>
+              </div>
+            </div>
+            <!-- Education 3 -->
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img src="https://img.icons8.com/ios/452/school.png" alt="School" />
+              </div>
+              <div class="timeline-content">
+                <h3>High School</h3>
+                <p class="institution">Seventh day adventist Sr. Sec. School</p>
+                <p class="year">2018 - 2019</p>
+                <p class="description">
+                    Physics,Chemistry,Mathematics etcs.
+                  </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- PORTFOLIO ITEM END -->
-
-      <!-- PORTFOLIO ITEM 2 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-          <div class="img">
-            <a href="img/portfolio/portfolio-02-large.jpg" data-lightbox="roadtrip"
-              title="Project Two - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-02-thumbnail.jpg"
-                alt="Portfolio Item"></a>
-          </div>
-        </div>
-      </div>
-      <!-- PORTFOLIO ITEM END -->
-
-      <!-- PORTFOLIO ITEM 3 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-          <div class="img">
-            <a href="img/portfolio/portfolio-03-large.jpg" data-lightbox="roadtrip"
-              title="Project Three - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-03-thumbnail.jpg"
-                alt="Portfolio Item"></a>
-          </div>
-        </div>
-      </div>
-      <!-- PORTFOLIO ITEM END -->
-
-      <!-- PORTFOLIO ITEM 4 -->
-      <div class="col-md-3 col-sm-6 ">
-        <div class="overlay-effect effects clearfix">
-          <div class="img">
-            <a href="img/portfolio/portfolio-04-large.jpg" data-lightbox="roadtrip"
-              title="Project Four - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-04-thumbnail.jpg"
-                alt="Portfolio Item"></a>
-          </div>
-        </div>
-      </div>
-      <!-- PORTFOLIO ITEM END -->
-
-      <!-- PORTFOLIO ITEM 5 -->
-      <div class="col-md-3 col-sm-6 ">
-        <div class="overlay-effect effects clearfix">
-          <div class="img">
-            <a href="img/portfolio/portfolio-05-large.jpg" data-lightbox="roadtrip"
-              title="Project Five - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-05-thumbnail.jpg"
-                alt="Portfolio Item"></a>
-          </div>
-        </div>
-      </div>
-      <!-- PORTFOLIO ITEM END -->
-
-      <!-- PORTFOLIO ITEM 6 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-          <div class="img">
-            <a href="img/portfolio/portfolio-06-large.jpg" data-lightbox="roadtrip"
-              title="Project Six - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-06-thumbnail.jpg"
-                alt="Portfolio Item"></a>
-          </div>
-        </div>
-      </div>
-      <!-- PORTFOLIO ITEM END -->
-
-      <!-- PORTFOLIO ITEM 7 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-          <div class="img">
-            <a href="img/portfolio/portfolio-07-large.jpg" data-lightbox="roadtrip"
-              title="Project Seven - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-07-thumbnail.jpg"
-                alt="Portfolio Item"></a>
-          </div>
-        </div>
-      </div>
-      <!-- PORTFOLIO ITEM END -->
-
-      <!-- PORTFOLIO ITEM 8 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="overlay-effect effects clearfix">
-          <div class="img">
-            <a href="img/portfolio/portfolio-08-large.jpg" data-lightbox="roadtrip"
-              title="Project Eight - Lorem Ipsum"><img class="grayscale" src="img/portfolio/portfolio-08-thumbnail.jpg"
-                alt="Portfolio Item"></a>
-          </div>
-        </div>
-      </div>
-      <!-- PORTFOLIO ITEM END -->
-    </div><!--/row-->
-  </div><!--/.container-->
-  <!-- ==========================
-        PORTFOLIO SECTION END
+    
+        <script src="script.js"></script>
+       <!-- ==========================
+        EDUCATION SECTION STARTS
         =========================== -->
 
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="project-card" onclick="toggleDetails('project1-details')">
+              <h3>Automated Testing for E-Commerce Platform</h3>
+              <p>Click to view details</p>
+              <div class="project-details" id="project1-details">
+                  <p><strong>Tools Used:</strong> Selenium, Pyhton.</p>
+                  <p><strong>Key Contributions:</strong> Developed a automated script for a full user journey to test delivery on specific 200 zipcodes,by login with credentials and then navigate to a category and then a inner category and choose a product and then buy the product by entering full user details  </p>
+              </div>
+          </div>
+          <div class="project-card" onclick="toggleDetails('project2-details')">
+              <h3>API Testing for Mobile Banking Application</h3>
+              <p>Click to view details</p>
+              <div class="project-details" id="project2-details">
+                  <p><strong>Tools Used:</strong>Postman.</p>
+                  <p><strong>Key Contributions:</strong> Automated tests for 75+ API endpoints, performance validation.</p>
+              </div>
+          </div>
+          <div class="project-card" onclick="toggleDetails('project3-details')">
+              <h3>Performance Testing for Healthcare Application</h3>
+              <p>Click to view details</p>
+              <div class="project-details" id="project3-details">
+                  <p><strong>Tools Used:</strong> JMeter.</p>
+                  <p><strong>Key Contributions:</strong> Simulated 10,000 users, identified performance bottlenecks.</p>
+              </div>
+          </div>
+          <!-- Add more project cards as needed -->
+      </section>
+      
+      <script>
+          function toggleDetails(id) {
+              var details = document.getElementById(id);
+              if (details.style.display === "none" || details.style.display === "") {
+                  details.style.display = "block";
+              } else {
+                  details.style.display = "none";
+              }
+          }
+      </script>
 
 
 
@@ -377,110 +401,6 @@
   <!-- ==========================
         CUSTOM SPACER END
         =========================== -->
-
-
-
-  <!-- ==========================
-        BLOG SECTION 
-        =========================== -->
-  <section class="text-center section-padding" id="blog">
-    <div class="container">
-      <!-- Headline -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="arrow">My <span>little</span> blog</h1>
-        </div>
-      </div><br><br>
-
-      <!-- Blog Slider -->
-      <div class="row">
-        <div id="blogSlider">
-          <ul class="slides">
-            <li>
-              <!-- Blog Entry 1 -->
-              <div class="col-md-4 wp4">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                  </div>
-                </div>
-                <br>
-                <h2>Creative Minds</h2><!-- Headline -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar
-                  imperdiet. Praesent non adipiscing libero.</p><!-- Description-->
-              </div>
-              <!-- Blog Entry 2 -->
-              <div class="col-md-4 wp4 delay-05s">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                  </div>
-                </div>
-                <br>
-                <h2>Creative Hearts</h2><!-- Headline -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar
-                  imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
-              </div>
-              <!-- Blog Entry 3 -->
-              <div class="col-md-4 wp4 delay-1s">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                  </div>
-                </div>
-                <br>
-                <h2>Creative Ideas</h2><!-- Headline -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar
-                  imperdiet. Praesent non adipiscing libero.</p><!-- Description-->
-              </div>
-            </li>
-            <li>
-              <!-- Blog Entry 4 -->
-              <div class="col-md-4 wp4">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                  </div>
-                </div>
-                <br>
-                <h2>Creative Minds</h2><!-- Headline -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar
-                  imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
-              </div>
-              <!-- Blog Entry 5 -->
-              <div class="col-md-4 wp4 delay-05s">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                  </div>
-                </div>
-                <br>
-                <h2>Creative Hearts</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar
-                  imperdiet. Praesent non adipiscing libero.</p>
-              </div>
-              <!-- Blog Entry 6 -->
-              <div class="col-md-4 wp4 delay-1s">
-                <div class="overlay-effect effects clearfix">
-                  <div class="img">
-                    <img src="img/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                  </div>
-                </div>
-                <br>
-                <h2>Creative Ideas</h2><!-- Headline -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar
-                  imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ==========================
-        BLOG SECTION END
-        =========================== -->
-
 
 
   <!-- ==========================
@@ -526,35 +446,6 @@
   <!-- ==========================
         CLIENTS SECTION END
         =========================== -->
-
-
-
-
-
-  <!-- ==========================
-        NEWSLETTER SECTION 
-        =========================== -->
-  <section>
-    <div class="container-fluid">
-      <div class="row color-bg">
-        <div class="col-md-6 nopadding subscribe text-center">
-          <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1><!-- Heading -->
-          <form action="index.html#">
-            <input type="text" name="" value="" placeholder="" required><!-- E-Mail -->
-            <input type="submit" name="" value="Send"><!-- Submit Button -->
-          </form>
-        </div>
-        <div class="col-md-6 nopadding features-intro-img">
-          <div class="about-image" style="background-image:url(img/newsletter.png)"></div><!-- Right Image -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ==========================
-        NEWSLETTER SECTION END
-        =========================== -->
-
-
 
   <!-- ==========================
         CONTACT SECTION
@@ -631,11 +522,8 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="social-buttons">
-            <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
-            <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
-            <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
-            <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
-            <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
+            <li><a href="index.html#" class="social-btn"><i class="fa fa-instagram"></i></a></li><!-- twitter -->
+            <li><a href="https://www.facebook.com/people/Arshan-Jafri/pfbid02e77rtgTGXu7DG63AprgsoomBTtaes36xV4KX25Ew1R46WH7g6cRx8ibeMnD4gxc8l/" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
           </ul>
         </div>
       </div>
@@ -654,7 +542,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
+          <p>All Rights Reserved. &copy; 2015</p>
         </div>
       </div>
     </div>
